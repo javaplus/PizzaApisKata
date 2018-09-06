@@ -40,11 +40,17 @@ Helpful Links:
 
 ## Test your application
 
-Once you've created your first RestController and RequestMapping to a method, you can run it using the **mvn spring-boot:run"** command or from inside your STS IDE with a right click and Run As->Spring Boot App.  Either way, you'll then need to use [PostMan](https://www.getpostman.com/), [CURL](https://www.lifewire.com/example-uses-of-the-linux-curl-command-4084144), or some other tool to submit the appropriate HTTP request to your endpoint.  Your endpoint should be something like this by default **http://localhost:8080/pizzas**.  Of course, this URL can change depending on how you define your RequestMapping.
+Once you've created your first RestController and RequestMapping to a method, you can run it using the **mvn spring-boot:run** command or from inside your STS IDE with a right click and Run As->Spring Boot App.  Either way, you'll then need to use [PostMan](https://www.getpostman.com/), [CURL](https://www.lifewire.com/example-uses-of-the-linux-curl-command-4084144), or some other tool to submit the appropriate HTTP request to your endpoint.  Your endpoint should be something like this by default **http://localhost:8080/pizzas**.  Of course, this URL can change depending on how you define your RequestMapping.
 
 
-## Package your application
+## Package your application For Deployment
 
+When your first service is tested you can go ahead and attempt to package it and deploy to AWS. To package with maven simply run the following command: 
+``` 
+mvn clean package
+```
+This will build the application, run any tests, and package it as a [fat jar](https://www.baeldung.com/deployable-fat-jar-spring-boot).
+[Spring's Jar Description](https://docs.spring.io/spring-boot/docs/current/reference/html/executable-jar.html)
 
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
