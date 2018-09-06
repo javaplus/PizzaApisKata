@@ -24,11 +24,22 @@ After downloading and unziping the starter application, you can attempt to run i
 ``` 
 mvn spring-boot:run
 ```
-This utilizes the [spring boot maven plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/run-mojo.html)
+This utilizes the [spring boot maven plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html)
 
 **NOTE:** By default, Spring Boot using port 8080 to run.  So, be sure that port is free.
+
+## Your First Rest Controller
+
+You can start by building a simple [RestController](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html) that will be entry point to your application for your Pizza apis.
+
+
+
+[RESTController Tutorial](http://zetcode.com/springboot/restcontroller/)
 
 
 
 # Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
+[REST Service with Spring Boot](https://spring.io/guides/gs/rest-service/)
+[Spring Controller vs RestController](https://www.baeldung.com/spring-controller-vs-restcontroller)
+[Detailed Spring Boot Rest Controller Tutorial](http://www.springboottutorial.com/creating-rest-service-with-spring-boot)
