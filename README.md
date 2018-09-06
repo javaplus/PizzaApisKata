@@ -28,17 +28,25 @@ This utilizes the [spring boot maven plugin](https://docs.spring.io/spring-boot/
 
 **NOTE:** By default, Spring Boot using port 8080 to run.  So, be sure that port is free.
 
-## Your First Rest Controller
+## Creating Your First Rest Controller
 
-You can start by building a simple [RestController](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html) that will be entry point to your application for your Pizza apis.
+You can start by building a simple class annotated with [RestController](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html) that will be entry point to your application for your Pizza apis.
 
+This will require creating a method that is annotated with the [RequestMapping](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html) annotation to map an HTTP request to your method.  This method could just return a hard coded string to get started with.
 
-
+Helpful Links:
 [RESTController Tutorial](http://zetcode.com/springboot/restcontroller/)
+[RequestMapping Tutorial](https://www.baeldung.com/spring-requestmapping)
+
+## Test your application
+
+Once you've created your first RestController and RequestMapping to a method, you can run it using the **mvn spring-boot:run"** command or from inside your STS IDE with a right click and Run As->Spring Boot App.  Either way, you'll then need to use [PostMan](https://www.getpostman.com/), [CURL](https://www.lifewire.com/example-uses-of-the-linux-curl-command-4084144), or some other tool to submit the appropriate HTTP request to your endpoint.  Your endpoint should be something like this by default **http://localhost:8080/pizzas**.  Of course, this URL can change depending on how you define your RequestMapping.
 
 
+## Package your application
 
-# Helpful Links
+
+# More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
 [REST Service with Spring Boot](https://spring.io/guides/gs/rest-service/)
 [Spring Controller vs RestController](https://www.baeldung.com/spring-controller-vs-restcontroller)
