@@ -53,12 +53,25 @@ This will build the application, run any tests, and package it as a [fat jar](ht
 [Spring's Jar Description](https://docs.spring.io/spring-boot/docs/current/reference/html/executable-jar.html)
 
 This will create a target folder and in that folder you will find your jar.
-You can test the jar locally by running the following command from the target folder
+You can test the jar locally by running the following command from the target folder:
 ```
 java -jar pizza-shop-api-0.0.1-SNAPSHOT.jar
 ```
+You may have to change the command to specify your jar name.
 
+# Going to the Cloud
 
+## Run My Jar Amazon!
+
+We will now just have Amazon run our jar using Elastic Beanstalk.
+To do this, sign into Amazon and go to **"Services"**.  Then under **"Compute"**, choose **Elastic Beanstalk**.
+
+Start the process to creat an Elastic Beanstalk instance.  Be sure to set the Platform as Java and choose to "Upload your code".  Browse to the jar in your target folder choose it to upload.  
+Make sure to **"Configure more options"** before you create the application so that you can modify the **Network** box to add a **VPC** and a **public IP address**.
+Once you've selected the jar, modified the network, go ahead and create the application.  This will take a few minutes.
+
+## Testing in the cloud
+Once your app is up and running the Elastic Beanstalk, it should show the URL at the top to access the applciation.
 
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
