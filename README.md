@@ -5,7 +5,7 @@ A kata for building REST Api's using SpringBoot and Deploying to AWS using Elast
 1. Java development Kit (JDK 8) - [Download here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 1. Maven 3.x - [Download Maven here](https://maven.apache.org/download.cgi)
 1. An IDE or Text Editor (Use your favorite). Some options if you don't have one: [SpringSource Tool Suite - Eclipse based](https://spring.io/tools/sts/all) or [Visual Studio Code](https://code.visualstudio.com/)
-1. AWS Account.  Free tier is enough. [AWS](https://aws.amazon.com/)
+1. AWS Account.  Free tier is should suffice, but you will have to enter a credit card number if you don't have an account already. [AWS](https://aws.amazon.com/)
 
 
 # The GOAL
@@ -51,6 +51,14 @@ mvn clean package
 ```
 This will build the application, run any tests, and package it as a [fat jar](https://www.baeldung.com/deployable-fat-jar-spring-boot).
 [Spring's Jar Description](https://docs.spring.io/spring-boot/docs/current/reference/html/executable-jar.html)
+
+This will create a target folder and in that folder you will find your jar.
+You can test the jar locally by running the following command from the target folder
+```
+java -jar pizza-shop-api-0.0.1-SNAPSHOT.jar
+```
+
+
 
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
