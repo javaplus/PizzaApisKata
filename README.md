@@ -61,7 +61,7 @@ You may have to change the command to specify your jar name.
 
 # Going to the Cloud
 
-## Run My Jar Amazon!
+## Create Elastic Beanstalk Application
 
 We will now just have Amazon run our jar using Elastic Beanstalk.
 To do this, sign into Amazon and go to **"Services"**.  Then under **"Compute"**, choose **Elastic Beanstalk**.
@@ -72,6 +72,7 @@ Once you've selected the jar, modified the network, go ahead and create the appl
 
 ## Testing in the cloud
 Once your app is up and running the Elastic Beanstalk, it should show the URL at the top to access the applciation.
+Remember that your application is running on port 8080.  But you'll find out even if you use the new url with the port of 8080 it still won't be reachable.  This is because traffic on port 8080 is not allowed through by default.  There are s
 
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
