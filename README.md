@@ -72,7 +72,7 @@ Choose **"Configure more options"** before you create the application.  From the
 Once you've selected the jar, modified the network, go ahead and create the application by clicking **Create app**.  This will take a few minutes.
 
 ## Testing in the cloud
-Once your app is up and running the Elastic Beanstalk, it should show the URL at the top to access the applciation.
+Once your app is up and running the Elastic Beanstalk, it should show the URL at the top of the EB Dashboard page.  
 Remember that your application is running on port 8080.  But you'll find out even if you use the new url with the port of 8080 it still won't be reachable.  This is because traffic on port 8080 is not allowed through by default.  You need to open the port to allow traffic through on port 8080.
 
 ## Allow traffic on port 8080
@@ -84,7 +84,7 @@ On the **VPC Dashboard**, under **Security**, click on **Security Groups**.  Che
 Set the Type to **Custom TCP Rule**, Set the **Port Range** to **8080** and the **Source** to **0.0.0.0/0**.
 Then click **Save**.  
 
-This should immediately allow you to test again and get a successful response.
+This should immediately allow you to test again and get a successful response. If you don't have the URL, just go back to **Services**->**Elastic Beanstalk** and your environment should show up.  When you click it, you'll be taken to the Dashboard again and the URL will be at the top. Copy it or Right Click and open in a new Tab.  Then add port the port and uri ':8080/pizzas' to the url to test.
 
 # Building the Code Pipeline
 
