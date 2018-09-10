@@ -96,11 +96,27 @@ Create a Git repo on GitHub.com for your code.  (This has to be on GitHub or som
 
 Commit your code to your new created GitHub.com repo.
 
-## Create the CodePipeline
+## Create S3 Bucket for Caching
+
+Need to create an S3 bucket to cache our maven and build artifacts.
+
+## Start the CodePipeline
+
 
 In AWS, go to **Services**, then under **Developer Tools**, select **CodePipeline**.
 
-Once, you 
+Once, you have clicked "Get Started", enter a Pipeline name (can be anything,  maybe use YourInitials_PizzaApiPipeline).
+Under **Source Provider** choose Github.  Click the **Connect to GitHub** button and use your GitHub credentials to log in.
+Once you login and **Authorize aws-codesuite**, choose the newly created Github repo with your code in it under **Repository**.  Set the **Branch** to master. Now click **Next step**.
+
+Under **Build provider** select **AWS CodeBuild**, then select **Create a new build project**
+ 
+
+## CodeBuild project configuration 
+
+Under the AWS CodeBuild section, give a project name (e.g. BT_PizzaAPI_CodeBuild). Under **Operating System** choose **Ubuntu**.  **Runtime**:**Java**, and **Version**:**openjdk-8**. 
+Under **Cache**, in the **Type** drop down, we are going to leave this blank for now.  select "Amazon S3"
+
 
 
 # More Helpful Links
