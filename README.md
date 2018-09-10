@@ -85,6 +85,23 @@ Then click **Save**.
 
 This should immediately allow you to test again and get a successful response.
 
+# Building the Code Pipeline
+
+Before we do anything else with our application code, we are going to create a continuous deployment pipeline using AWS [CodePipeline](https://aws.amazon.com/codepipeline/).  That is create an automated way to take our code from source control, test it, build it, and then deploy it.  This way any future changes we make, we can commit the code to our repo and it will automatically be tested, built/packaged, and deployed.
+
+## Get to Git
+
+Create a Git repo on GitHub.com for your code.  (This has to be on GitHub or some other internet facing Git repository in order for AWS to be able to get access to our code).  
+
+Commit your code to your new created GitHub.com repo.
+
+## Create the CodePipeline
+
+In AWS, go to **Services**, then under **Developer Tools**, select **CodePipeline**.
+
+Once, you 
+
+
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
 [REST Service with Spring Boot](https://spring.io/guides/gs/rest-service/)
