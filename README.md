@@ -88,7 +88,7 @@ This should immediately allow you to test again and get a successful response. I
 
 # Building the Code Pipeline
 
-Before we do anything else with our application code, we are going to create a continuous deployment pipeline using AWS [CodePipeline](https://aws.amazon.com/codepipeline/).  That is create an automated way to take our code from source control, test it, build it, and then deploy it.  This way any future changes we make, we can commit the code to our repo and it will automatically be tested, built/packaged, and deployed.
+Before we do anything else with our application code, we are going to create a continuous deployment pipeline using AWS [CodePipeline](https://aws.amazon.com/codepipeline/).  This will enable an automated way to take our code from source control, test it, build it, and then deploy it.  This way, any future changes we make, we can commit the code to our repo and it will automatically be tested, built/packaged, and deployed.
 
 ## Get to Git
 
