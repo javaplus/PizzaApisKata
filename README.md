@@ -72,7 +72,18 @@ Once you've selected the jar, modified the network, go ahead and create the appl
 
 ## Testing in the cloud
 Once your app is up and running the Elastic Beanstalk, it should show the URL at the top to access the applciation.
-Remember that your application is running on port 8080.  But you'll find out even if you use the new url with the port of 8080 it still won't be reachable.  This is because traffic on port 8080 is not allowed through by default.  There are s
+Remember that your application is running on port 8080.  But you'll find out even if you use the new url with the port of 8080 it still won't be reachable.  This is because traffic on port 8080 is not allowed through by default.  You need to open the port to allow traffic through on port 8080.
+
+## Allow traffic on port 8080
+To allow traffic through on a specific port address, you need to edit your VPC Security Groups settings.  
+To do this, on AWS, go to **Services**, then under **Networking and Content Delivery**, go to **VPC**.
+
+On the **VPC Dashboard**, under **Security**, click on **Security Groups**.  Check the box next to your Elastic Beanstalk environment at the top and then at the bottom go to the **Inbound Rules** tab.  Click **Edit** and then **Add another rule**.
+
+Set the Type to **Custom TCP Rule**, Set the **Port Range** to **8080** and the **Source** to **0.0.0.0/0**.
+Then click **Save**.  
+
+This should immediately allow you to test again and get a successful response.
 
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
