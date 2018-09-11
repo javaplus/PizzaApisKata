@@ -255,7 +255,7 @@ Now is when the fun really happens... ok... maybe that was already too much fun 
 
 However, this is where the guided tour ends... you are now free... no guard rails... explore, learn, create, do cool stuff...
 
-Some suggestions... Implement some of the API's from the swagger more fully.  
+Some suggestions... Implement some of the API's from the [Swagger/OAS](https://app.swaggerhub.com/apis/btarlton/PizzaShop/1.0.1) more fully.  
 
 
 1. Return JSON from your RestController. (Hint don't work too hard on this... let the framework do the work).  Create Classes that represent the types specified in the OAS/Swagger and return the classes.
