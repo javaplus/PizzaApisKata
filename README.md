@@ -22,8 +22,10 @@ The data you return can all be mocked if need be as the goal is not necessarily 
 ## create a starter project
 Start by creating a SpringBoot application.  Using the Spring Initializr(https://start.spring.io/) is a good way to start.
 You will need the Web(SpringMVC) dependency and optionally I'd add Lombok for convenience.
+<details><summary>Spring Initializr Picture</summary>
 ![SpringInitializr](/images/SpringInitialzr.PNG)
 
+</details>
 After downloading and unziping the starter application, you can attempt to run it by using the following command:
 ``` 
 mvn spring-boot:run
