@@ -98,10 +98,9 @@ Commit your code to your new created GitHub.com repo.
 
 ## Create S3 Bucket for Caching
 
-Need to create an S3 bucket to cache our maven and build artifacts.
+Before we can create our CodePipeline, we weed to create a place to cache our maven and build artifacts.  To do this we will create an S3 bucket.  So, under **Services**, go to **Storage**, then select **S3**, select **Create bucket**.  Give it a name, something like yourinitials-build-cache.
 
 ## Start the CodePipeline
-
 
 In AWS, go to **Services**, then under **Developer Tools**, select **CodePipeline**.
 
@@ -115,9 +114,41 @@ Under **Build provider** select **AWS CodeBuild**, then select **Create a new bu
 ## CodeBuild project configuration 
 
 Under the AWS CodeBuild section, give a project name (e.g. BT_PizzaAPI_CodeBuild). Under **Operating System** choose **Ubuntu**.  **Runtime**:**Java**, and **Version**:**openjdk-8**. 
-Under **Cache**, in the **Type** drop down, we are going to leave this blank for now.  select "Amazon S3"
+Under **Cache**, in the **Type** drop down, we will have to leave this as **No cache** for now and then change it in a minute(Seems to be a bug in AWS that you cannot select your S3 bucket at this time. 
+Leave the **Create a service role in your account** selected and the default Role name should be fine.  Leave the other defaults and  click the **Save build project** button at the bottom.
 
+This should create the build project and take you back to the Create pipeline wizard.  Before we continue with the pipeline setup, let's set up our Code Build cache.  Click on the **View project details** under the CodeBuild project name.  This should launch a new tab with your CodeBuild information.  Click the **Edit project** button and then under **Cache** change the **Type** to **Amazon S3**.  Select your bucket from the the **Bucket** drop down.  You can leave the **Path prefix** blank or choose to set it to **cache/archives** (an AWS [tutorial](https://aws.amazon.com/blogs/devops/how-to-enable-caching-for-aws-codebuild/) recommends this, but it works without).
 
+Now click the **Update** button to save the cache/S3 bucket changes to your CodeBuild, then close that tab.
+
+Now you should be back on the **Create pipeline** wizard that is still on **Select an existing build project** and has your build project under Project name.  Click the **Next step** button.
+
+Under **Deployment Provider** select **AWS Elastic Beanstalk** and under **Application name** if you click there, it should have your EB application listed.  Select it and then select your EB environment under **Environment name**.  Now click **Next step**.
+
+For **AWS Service Role**, click the **Create role** button.  This will open a new tab and populate some defaults for creating a new role.  Just accept the defaults by selecting the **Allow** button at the bottom right.  This should take you right back to the previous screen with the **Role name** populated.  Just hit the **Next step** button. You can review your settings and hit **Create pipeline**.
+
+This should create the pipeline and cause it to run right away.  However, the build step will fail because we told the CodeBuild process to look for a **buildspec.yml** file to tell it how to build the application.  We must add that to our code base.
+
+## Adding a buildspec.yml
+
+At the root of your workspace, (you can do this directly on Github.com) add a new file named **buildspec.yml**.  Put the following lines in it:
+```
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
+artifacts:
+  files:
+    - target/pizza-shop-api-0.0.1-SNAPSHOT.jar
+```
+**NOTE:** The file name may be different for you depending on how your named your project.  Check the name of the jar file in your target directory.
 
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
