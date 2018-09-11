@@ -13,7 +13,7 @@ We provide many step-by-step instructions for the AWS parts, but more general gu
 
 # The GOAL
 
-The goal is to implement the following OAS/Swagger using SpringBoot RestControllers.:  [PizzaShop OAS](https://app.swaggerhub.com/apis/btarlton/PizzaShop/1.0.0)
+The goal is to implement the following OAS/Swagger using SpringBoot RestControllers.:  [PizzaShop OAS](https://app.swaggerhub.com/apis/btarlton/PizzaShop/1.0.1)
 
 The data you return can all be mocked if need be as the goal is not necessarily to have a completely working application, but understanding how to work with SpringBoot, RestControllers, and then how to deploy to AWS using CodePipeline.
 
