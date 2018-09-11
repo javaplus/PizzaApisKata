@@ -158,8 +158,21 @@ Once this runs again, it should deploy your app again to Elastic Beanstalk.  Whe
 
 Now that you have a CodePipeline set up, you can make more changes to the app and whenever they are committed to the Master branch, the change will be tested, built, and then deployed.
 
-So, go ahead and just make a simple change to the return value of the method in your RestController.  Commit this change and watch the CodePipeline run again and then when it's finished deploying check that your new functionality up and running in EB.
+So, go ahead and just make a simple change to the return value of the method in your RestController.  Commit this change and watch the CodePipeline run again and then when it's finished deploying check that your new functionality is up and running in EB.
 
+If this works, you should dance a little.  Because now you have a continuous build/deploy pipeline.
+
+## But wait there's more!!!
+
+Now is when the fun really happens... ok... maybe that was already too much fun and you are done... that's perfectly fine.  However, if you want to get better or learn more about implementing API's in SpringBoot, you can keep going.
+
+However, this is where the guided tour ends... you are now free... no guard rails... explore, learn, create, do cool stuff...
+
+Some suggestions... Implement some of the API's from the swagger more fully.  
+
+
+1. Return JSON from your RestController. (Hint don't work too hard on this... let the framework do the work).
+1. Figure out how to take a POST request as JSON and convert that to an object.  Simple example [here](https://stackoverflow.com/questions/40247556/spring-boot-automatic-json-to-object-at-controller).
 
 
 
