@@ -42,6 +42,11 @@ You can start by building a simple class annotated with [RestController](https:/
 
 This will require creating a method that is annotated with the [RequestMapping](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html) annotation to map an HTTP request to your method.  This method could just return a hard coded string to get started with.
 
+<details>
+ <summary>Spring RestController class **Spoiler Alert**</summary>
+  <img src=/images/FirstRestController.PNG></img>
+</details>
+
 Helpful Links:
 [RESTController Tutorial](http://zetcode.com/springboot/restcontroller/)
 [RequestMapping Tutorial](https://www.baeldung.com/spring-requestmapping)
