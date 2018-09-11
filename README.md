@@ -24,7 +24,7 @@ Start by creating a SpringBoot application.  Using the Spring Initializr(https:/
 You will need the Web(SpringMVC) dependency and optionally I'd add Lombok for convenience.
 <details><summary>Spring Initializr Picture</summary>
  <p>
-![SpringInitializr](/images/SpringInitialzr.PNG)
+  <img src=/images/SpringInitialzr.PNG>
  </p>
 </details>
 After downloading and unziping the starter application, you can attempt to run it by using the following command:
