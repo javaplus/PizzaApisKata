@@ -114,6 +114,13 @@ On the **VPC Dashboard**, under **Security**, click on **Security Groups**.  Che
 Set the Type to **Custom TCP Rule**, Set the **Port Range** to **8080** and the **Source** to **0.0.0.0/0**.
 Then click **Save**.  
 
+<details>
+ <summary>Custom TCP Rule Screenshot</summary>
+  <img src=/images/CustomTCPRuleV2.PNG></img>
+</details>
+
+
+
 This should immediately allow you to test again and get a successful response. If you don't have the URL, just go back to **Services**->**Elastic Beanstalk** and your environment should show up.  When you click it, you'll be taken to the Dashboard again and the URL will be at the top. Copy it or Right Click and open in a new Tab.  Then add port the port and uri ':8080/pizzas' to the url to test.
 
 # Building the Code Pipeline
