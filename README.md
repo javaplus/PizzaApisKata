@@ -173,6 +173,8 @@ Some suggestions... Implement some of the API's from the swagger more fully.
 
 1. Return JSON from your RestController. (Hint don't work too hard on this... let the framework do the work).
 1. Figure out how to take a POST request as JSON and convert that to an object.  Simple example [here](https://stackoverflow.com/questions/40247556/spring-boot-automatic-json-to-object-at-controller).
+1. Put most of your logic in Service Classes and have spring inject them into your RestControllers.
+1. Create JUnit tests for your RestController.  See [tutorial here](https://spring.io/guides/gs/testing-web/).
 
 
 
