@@ -235,7 +235,7 @@ artifacts:
   files:
     - target/pizza-shop-api-0.0.1-SNAPSHOT.jar
 ```
-**NOTE:** The last line of your buildspec.yml may be different. The file name may be change for you depending on how you named your project.  Check the name of the jar file in your target directory.
+**NOTE:** The last line of your buildspec.yml may be different. The file name may need to be changed for you depending on how you named your project.  Check the name of the jar file in your target directory.
 
 Once you commit this file into your master branch, it should kick off your CodePipeline again.  If you need to manually kick it off, you can go back to your CodePipeline (Services->Developer tools->CodePipeline) and select your CodePipeline, then select **Release change** and then click **Release**.  This will force it to try to detect new changes and re-release.  
 
