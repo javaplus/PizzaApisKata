@@ -148,7 +148,20 @@ artifacts:
   files:
     - target/pizza-shop-api-0.0.1-SNAPSHOT.jar
 ```
-**NOTE:** The file name may be different for you depending on how your named your project.  Check the name of the jar file in your target directory.
+**NOTE:** The last line of your buildspec.yml may be different. The file name may be change for you depending on how you named your project.  Check the name of the jar file in your target directory.
+
+Once you commit this file into your master branch, it should kick off your CodePipeline again.  If you need to manually kick it off, you can go back to your CodePipeline (Services->Developer tools->CodePipeline) and select your CodePipeline, then select **Release change** and then click **Release**.  This will force it to try to detect new changes and re-release.  
+
+Once this runs again, it should deploy your app again to Elastic Beanstalk.  When this is done, test your application again, by going to the same URL you used before.
+
+## Make a change
+
+Now that you have a CodePipeline set up, you can make more changes to the app and whenever they are committed to the Master branch, the change will be tested, built, and then deployed.
+
+So, go ahead and just make a simple change to the return value of the method in your RestController.  Commit this change and watch the CodePipeline run again and then when it's finished deploying check that your new functionality up and running in EB.
+
+
+
 
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
