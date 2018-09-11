@@ -92,6 +92,13 @@ Choose **"Configure more options"** before you create the application.
 </details>
 
 From the Configuration screen,  under the **Network** box click **modify**.  Then add a **VPC** and select to add a **public IP address**.  You will have to select a region as well.
+<details>
+ <summary>Elastic VPC Setup Screenshot</summary>
+  <img src=/images/EBSetup2Network.PNG></img>
+</details>
+
+
+
 Once you've selected the jar, modified the network, go ahead and create the application by clicking **Create app**.  This will take a few minutes.
 
 ## Testing in the cloud
