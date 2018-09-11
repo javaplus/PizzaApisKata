@@ -1,5 +1,8 @@
-# PizzaApisKata
-A kata for building REST Api's using SpringBoot and Deploying to AWS using Elastic Beanstalk.
+# SpringBoot and AWS CodePipeline Kata
+
+In this session, you will implement some REST Api's using SpringBoot and then deploy as an AWS Elastic Beanstalk application.  We will then build a continuous deployment pipeline that allows code checked into GitHub to be automatically tested, packaged, and deployed using an AWS CodePipeline.
+
+We provide many step-by-step instructions for the AWS parts, but more general guidance on the SpringBoot development.  However, there are many links to SpringBoot documentation, tutorials, and sample code.  You can choose how far you want to go with the SpringBoot development, but the core of this tutorial will introduce you to SpringBoot and then how to set up the code pipeline.  
 
 # Prerequsites:
 1. Java development Kit (JDK 8) - [Download here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
