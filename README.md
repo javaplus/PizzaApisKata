@@ -144,8 +144,8 @@ Commit your code to your newly created GitHub.com repo.
 Before we can create our CodePipeline, we weed to create a place to cache our maven and build artifacts.  To do this we will create an S3 bucket.  So, under **Services**, go to **Storage**, then select **S3**, select **Create bucket**.  Give it a name, something like yourinitials-build-cache.
 
 <details>
- <summary>Custom TCP Rule Screenshot</summary>
-  <img src=/images/CustomTCPRuleV2.PNG></img>
+ <summary>S3 Bucket Creation Screenshot</summary>
+  <img src=/images/S3Bucket1.PNG></img>
 </details>
 
 ## Start the CodePipeline
