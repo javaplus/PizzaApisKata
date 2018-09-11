@@ -57,6 +57,11 @@ Helpful Links:
 
 Once you've created your first RestController and RequestMapping to a method, you can run it using the **mvn spring-boot:run** command or from inside your STS IDE with a right click and Run As->Spring Boot App.  Either way, you'll then need to use [PostMan](https://www.getpostman.com/), [CURL](https://www.lifewire.com/example-uses-of-the-linux-curl-command-4084144), or some other tool to submit the appropriate HTTP request to your endpoint.  Your endpoint should be something like this by default **http://localhost:8080/pizzas**.  Of course, this URL can change depending on how you define your RequestMapping.
 NOTE: For this first simple GET Request, you can just use your browser to invoke it.
+<details>
+ <summary>Simple Browser Test Screenshot</summary>
+  <img src=/images/FirstTestLocal.PNG></img>
+</details>
+
 
 
 ## Package your application For Deployment
