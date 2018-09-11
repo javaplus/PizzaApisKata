@@ -25,7 +25,6 @@ You will need the Web(SpringMVC) dependency and optionally I'd add Lombok for co
 <details>
  <summary>Spring Initializr Picture</summary>
   <img src=/images/SpringInitialzr.PNG></img>
- </p>
 </details>
 After downloading and unziping the starter application, you can attempt to run it by using the following command:
 ``` 
