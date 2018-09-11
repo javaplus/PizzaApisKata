@@ -176,10 +176,21 @@ Some suggestions... Implement some of the API's from the swagger more fully.
 1. Put most of your logic in Service Classes and have spring inject them into your RestControllers.
 1. Create JUnit tests for your RestController.  See [tutorial here](https://spring.io/guides/gs/testing-web/).
 
+**Good sample here**
+I've created a small Spring Boot application here as an example.  NOTE: This is not a spoiler.  It's not the solution, but just another SpringBoot app that exposes REST APIs.
+[My Sample Project for Reference](https://github.com/javaplus/grocery-pos)
+This project has several RestControllers demonstrating different ways of taking input and returning JSON.
+Look at in the controllers folder for the RestControllers.
+There's also plenty of JUnit tests as well for reference.
+
 
 
 # More Helpful Links
 [Getting Started with Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started-first-application.html)
+
 [REST Service with Spring Boot](https://spring.io/guides/gs/rest-service/)
+
 [Spring Controller vs RestController](https://www.baeldung.com/spring-controller-vs-restcontroller)
+
 [Detailed Spring Boot Rest Controller Tutorial](http://www.springboottutorial.com/creating-rest-service-with-spring-boot)
+
