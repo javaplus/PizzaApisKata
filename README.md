@@ -179,7 +179,6 @@ Under the AWS CodeBuild section, give a project name (e.g. BT_PizzaAPI_CodeBuild
 
 Under **Cache**, in the **Type** drop down, we will have to leave this as **No cache** for now and then change it in a minute(Seems to be a bug in AWS that you cannot select your S3 bucket at this time. 
 Leave the **Create a service role in your account** selected and the default Role name should be fine.  Leave the other defaults and  click the **Save build project** button at the bottom.
-
 <details>
  <summary>CodeBuild Setup Part 2 Screenshot</summary>
   <img src=/images/CodePipelineBuildSetup2.PNG></img>
@@ -187,7 +186,6 @@ Leave the **Create a service role in your account** selected and the default Rol
 
 
 This should create the build project and take you back to the Create pipeline wizard.  Before we continue with the pipeline setup, let's set up our Code Build cache.  
-
 <details>
  <summary>CodeBuild Setup Part 1 Screenshot</summary>
   <img src=/images/CodePipelineBuildSetup3.PNG></img>
@@ -197,7 +195,7 @@ Click on the **View project details** under the CodeBuild project name.  This sh
 
 <details>
  <summary>CodeBuild Cache Setup Screenshot</summary>
-  <img src=/images/CodeBuidCache.PNG></img>
+  <img src=/images/CodeBuildCache.PNG></img>
 </details>
 
 Now click the **Update** button to save the cache/S3 bucket changes to your CodeBuild, then close that tab.
