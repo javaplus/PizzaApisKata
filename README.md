@@ -217,7 +217,7 @@ Under **Deployment Provider** select **AWS Elastic Beanstalk** and under **Appli
 </details>
 
 
-For **AWS Service Role**, click the **Create role** button.  This will open a new tab and populate some defaults for creating a new role.  Just accept the defaults by selecting the **Allow** button at the bottom right.  This should take you right back to the previous screen with the **Role name** populated.  Just hit the **Next step** button. You can review your settings and hit **Create pipeline**.
+For **AWS Service Role**, click the **Create role** button.  This will open a new tab and populate some defaults for creating a new role.  Under the **Policy Name** drop down choose any of the **oneClick_AWS-CodePipeline-Service...** policies.  Then hit the **Allow** button at the bottom right.  This should take you right back to the previous screen with the **Role name** populated.  Just hit the **Next step** button. You can review your settings and hit **Create pipeline**.
 
 This should create the pipeline and cause it to run right away.  However, the build step will fail because we told the CodeBuild process to look for a **buildspec.yml** file to tell it how to build the application.  We must add that to our code base.
 
