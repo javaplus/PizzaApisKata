@@ -158,7 +158,7 @@ In AWS, go to **Services**, then under **Developer Tools**, select **CodePipelin
 
 Click **Create Pipeline** then enter a Pipeline name (can be anything,  maybe use YourInitials_PizzaApiPipeline).
 Under **Source Provider** choose Github.  Click the **Connect to GitHub** button and use your GitHub credentials to log in.
-Once you login and **Authorize aws-codesuite**, choose the newly created Github repo with your code in it under **Repository** NOTE: The Repository and Branch input's look like text boxes, but they are actually drop downs that should list your repos when you click in it.  Set the **Branch** to master.
+Once you login and **Authorize aws-codesuite**, choose the newly created Github repo with your code in it under **Repository** NOTE: The Repository and Branch input's look like text boxes, but they are actually drop downs that should list your repos and branches when you click in them.  Set the **Branch** to master.
 
 <details>
  <summary>Source Location Screenshot</summary>
