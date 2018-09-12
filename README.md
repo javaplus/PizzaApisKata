@@ -87,7 +87,14 @@ You may have to change the command to specify your jar name.
 We will now just have Amazon run our jar using Elastic Beanstalk.
 To do this, sign into Amazon and go to **"Services"**.  Then under **"Compute"**, choose **Elastic Beanstalk**.
 
-Start the process to create an Elastic Beanstalk instance by clicking the **Create New Application** link in the top right. The application name can be anything, but since we are in a shared environment, it may be useful to prefix it with your initials. Be sure to set the Platform as Java and choose to "Upload your code".  Browse to the jar in your target folder choose it to upload. Then click the **Upload** button at the bottom.
+Start the process to create an Elastic Beanstalk instance by clicking the **Create New Application** link in the top right. The application name can be anything, but since we are in a shared environment, it may be useful to prefix it with your initials. 
+You will have to create an environment. To do this click the **Create one now** link.
+Choose a **Web Server Environment**.  
+
+You can add a **Domain** name to customize your url.  Again you may want to prefix it with your initials or make sure it will be unique.  
+
+
+Be sure to set the Platform as Java and choose to "Upload your code".  Browse to the jar in your target folder choose it to upload. Then click the **Upload** button at the bottom.
 It may take a few minutes for the jar to be uploaded. But once it is uploaded, you will be returned back to the previous screen.
 Choose **"Configure more options"** before you create the application.  
 
