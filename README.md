@@ -93,8 +93,7 @@ Choose a **Web Server Environment**.
 
 You can add a **Domain** name to customize your url.  Again you may want to prefix it with your initials or make sure it will be unique.  
 
-
-Be sure to set the Platform as Java and choose to "Upload your code".  Browse to the jar in your target folder choose it to upload. Then click the **Upload** button at the bottom.
+Be sure to set the Platform as Java and choose to **Upload your code**.  Browse to the jar in your target folder choose it to upload. Then click the **Upload** button at the bottom.
 It may take a few minutes for the jar to be uploaded. But once it is uploaded, you will be returned back to the previous screen.
 Choose **"Configure more options"** before you create the application.  
 
@@ -109,9 +108,7 @@ From the Configuration screen,  under the **Network** box click **modify**.  The
   <img src=/images/EBSetup2Network.PNG></img>
 </details>
 
-
-
-Once you've selected the jar, modified the network, go ahead and create the application by clicking **Create app**.  This will take a few minutes.
+Once you've selected the jar, modified the network, go ahead and create the application by clicking **Create Environment**.  This will take a few minutes.
 
 ## Testing in the cloud
 Once your app is up and running the Elastic Beanstalk, it should show the URL at the top of the EB Dashboard page.  
