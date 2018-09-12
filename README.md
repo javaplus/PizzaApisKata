@@ -21,7 +21,7 @@ The data you return can all be mocked if need be as the goal is not necessarily 
 
 ## create a starter project
 Start by creating a SpringBoot application.  Using the Spring Initializr(https://start.spring.io/) is a good way to start.
-In the Spring Initiliazr be sure to add the **Web** (SpringMVC) dependency and optionally I'd add **Lombok** for convenience.
+In the Spring Initiliazr, under **Search for dependencies** be sure to search for and add the **Web** (SpringMVC) dependency and optionally I'd add **Lombok** for convenience.
 
 <details>
  <summary>Spring Initializr Picture</summary>
