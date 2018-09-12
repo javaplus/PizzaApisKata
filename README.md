@@ -158,7 +158,7 @@ In AWS, go to **Services**, then under **Developer Tools**, select **CodePipelin
 
 Click **Create Pipeline** then enter a Pipeline name (can be anything,  maybe use YourInitials_PizzaApiPipeline).
 Under **Source Provider** choose Github.  Click the **Connect to GitHub** button and use your GitHub credentials to log in.
-Once you login and **Authorize aws-codesuite**, choose the newly created Github repo with your code in it under **Repository**.  Set the **Branch** to master.
+Once you login and **Authorize aws-codesuite**, choose the newly created Github repo with your code in it under **Repository** NOTE: The Repository and Branch input's look like text boxes, but they are actually drop downs that should list your repos when you click in it.  Set the **Branch** to master.
 
 <details>
  <summary>Source Location Screenshot</summary>
@@ -189,7 +189,8 @@ Leave the **Create a service role in your account** selected and the default Rol
 </details>
 
 
-This should create the build project and take you back to the Create pipeline wizard.  Before we continue with the pipeline setup, let's set up our Code Build cache.  
+This should create the build project and take you back to the Create pipeline wizard(NOTE:It may take a few seconds).  Before we continue with the pipeline setup, let's set up our Code Build cache.  
+
 <details>
  <summary>CodeBuild Setup Part 1 Screenshot</summary>
   <img src=/images/CodePipelineBuildSetup3.PNG></img>
