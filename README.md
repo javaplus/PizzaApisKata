@@ -38,7 +38,7 @@ This utilizes the [spring boot maven plugin](https://docs.spring.io/spring-boot/
 
 ## Creating Your First Rest Controller
 
-You can start by building a simple class annotated with [RestController](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html) that will be entry point to your application for your Pizza apis.
+You can start by building a simple class annotated with [RestController](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html) that will be entry point to your application for your Pizza apis.  This will have to be a new class that you create.
 
 This will require creating a method that is annotated with the [RequestMapping](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html) annotation to map an HTTP request to your method.  This method could just return a hard coded string to get started with.
 
