@@ -145,7 +145,7 @@ Commit your code to your newly created GitHub.com repo.
 
 ## Create S3 Bucket for Caching
 
-Before we can create our CodePipeline, we weed to create a place to cache our maven and build artifacts.  To do this we will create an S3 bucket.  So, under **Services**, go to **Storage**, then select **S3**, select **Create bucket**.  Give it a name, something like yourinitials-build-cache.
+Before we can create our CodePipeline, we need to create a place to cache our maven and build artifacts.  To do this we will create an S3 bucket.  So, under **Services**, go to **Storage**, then select **S3**, select **Create bucket**.  Give it a name, something like yourinitials-build-cache.
 
 <details>
  <summary>S3 Bucket Creation Screenshot</summary>
@@ -156,7 +156,7 @@ Before we can create our CodePipeline, we weed to create a place to cache our ma
 
 In AWS, go to **Services**, then under **Developer Tools**, select **CodePipeline**.
 
-Once, you have clicked "Get Started", enter a Pipeline name (can be anything,  maybe use YourInitials_PizzaApiPipeline).
+Click **Create Pipeline** then enter a Pipeline name (can be anything,  maybe use YourInitials_PizzaApiPipeline).
 Under **Source Provider** choose Github.  Click the **Connect to GitHub** button and use your GitHub credentials to log in.
 Once you login and **Authorize aws-codesuite**, choose the newly created Github repo with your code in it under **Repository**.  Set the **Branch** to master.
 
