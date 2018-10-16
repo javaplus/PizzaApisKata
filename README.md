@@ -1,6 +1,6 @@
 # SpringBoot and AWS CodePipeline Kata
 
-In this session, you will implement some REST Api's using SpringBoot and deploy it as an AWS Elastic Beanstalk application.  We will then build a continuous deployment pipeline that allows code checked into GitHub to be automatically tested, packaged, and deployed using an AWS CodePipeline.
+In this session, you will implement REST Api's using SpringBoot and deploy it as an AWS Elastic Beanstalk application.  You will then build a continuous deployment pipeline that allows code checked into GitHub to be automatically tested, packaged, and deployed using an AWS CodePipeline.
 
 We provide many step-by-step instructions for the AWS parts, but more general guidance on the SpringBoot development.  However, there are many links to SpringBoot documentation, tutorials, and sample code.  You can choose how far you want to go with the SpringBoot development, but the core of this tutorial will introduce you to SpringBoot and then how to set up the code pipeline.  
 
