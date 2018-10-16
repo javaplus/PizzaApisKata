@@ -98,7 +98,7 @@ It may take a few minutes for the jar to be uploaded. But once it is uploaded, y
 Choose **"Configure more options"** before you create the application.  
 
 <details>
- <summary>Elastic Beanstalk Creation</summary>
+ <summary>Elastic Beanstalk Creation Screenshot Here</summary>
   <img src=/images/EBSetup1.PNG></img>
 </details>
 
@@ -124,7 +124,7 @@ Set the Type to **Custom TCP Rule**, Set the **Port Range** to **8080** and the 
 Then click **Save**.  
 
 <details>
- <summary>Custom TCP Rule Screenshot</summary>
+ <summary>Custom TCP Rule Screenshot Here</summary>
   <img src=/images/CustomTCPRuleV2.PNG></img>
 </details>
 
@@ -133,6 +133,8 @@ Then click **Save**.
 This should immediately allow you to test again and get a successful response. If you don't have the URL, just go back to **Services**->**Elastic Beanstalk** and your environment should show up.  When you click it, you'll be taken to the Dashboard again and the URL will be at the top. Copy it or Right Click and open in a new Tab.  Then add port the port and uri ':8080/pizzas' to the url to test.
 
 # Building the Code Pipeline
+
+*NOTE*: This next section is all about creating a continuous Build and Deployment pipeline in AWS.  There are quite a few steps to set this up the first time, but we walk you through them.  However, if you are more interested in learning more about SpringBoot rather than AWS Code Pipelines, you may want to skip this section and go to the "But Wait there's more" Section near the end where you pick back up with SpringBoot.  If you want to do the Code Pipeline, keep reading here...
 
 Before we do anything else with our application code, we are going to create a continuous deployment pipeline using AWS [CodePipeline](https://aws.amazon.com/codepipeline/).  This will enable an automated way to take our code from source control, test it, build it, and then deploy it.  This way, any future changes we make, we can commit the code to our repo and it will automatically be tested, built/packaged, and deployed.
 
@@ -148,7 +150,7 @@ Commit your code to your newly created GitHub.com repo.
 Before we can create our CodePipeline, we need to create a place to cache our maven and build artifacts.  To do this we will create an S3 bucket.  So, under **Services**, go to **Storage**, then select **S3**, select **Create bucket**.  Give it a name, something like yourinitials-build-cache.
 
 <details>
- <summary>S3 Bucket Creation Screenshot</summary>
+ <summary>S3 Bucket Creation Screenshot Here</summary>
   <img src=/images/S3Bucket1.PNG></img>
 </details>
 
