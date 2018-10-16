@@ -24,7 +24,7 @@ Start by creating a SpringBoot application.  Using the Spring Initializr(https:/
 In the Spring Initiliazr, under **Search for dependencies** be sure to search for and add the **Web** (SpringMVC) dependency and optionally I'd add **Lombok** for convenience.
 
 <details>
- <summary>Spring Initializr Picture</summary>
+ <summary>Spring Initializr Picture (Click Here for Screenshot)</summary>
   <img src=/images/SpringInitialzr.PNG></img>
 </details>
 
