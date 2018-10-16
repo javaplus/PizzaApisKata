@@ -7,6 +7,7 @@ We provide many step-by-step instructions for the AWS parts, but more general gu
 # Prerequsites:
 1. Java development Kit (JDK 8) - [Download here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 1. Maven 3.x - [Download Maven here](https://maven.apache.org/download.cgi)
+   - How to install Maven [Install guide](https://www.mkyong.com/maven/how-to-install-maven-in-windows/)
 1. An IDE or Text Editor (Use your favorite). Some options if you don't have one: [SpringSource Tool Suite - Eclipse based](https://spring.io/tools/sts/all) or [Visual Studio Code](https://code.visualstudio.com/)
 1. AWS Account.  Free tier is should suffice, but you will have to enter a credit card number if you don't have an account already. [AWS](https://aws.amazon.com/)
 
