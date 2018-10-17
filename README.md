@@ -94,7 +94,7 @@ Choose a **Web Server Environment**.
 
 You can add a **Domain** name to customize your url.  Again you may want to prefix it with your initials or make sure it will be unique.  
 
-Be sure to set the Platform as Java and choose to **Upload your code**.  Browse to the jar in your target folder choose it to upload. Then click the **Upload** button at the bottom. **STOP!** Do not go on though till you read the rest of this paragraph!  You need to make sure you Configure more options before continuing.  See the Screenshot below.
+Be sure to set the Platform as Java and choose to **Upload your code**.  Browse to the jar in your target folder choose it to upload. Then click the **Upload** button at the bottom. **STOP!** Do not click on the Create button yet!  You need to make sure you Configure more options before continuing.  See the Screenshot below.
 It may take a few minutes for the jar to be uploaded. But once it is uploaded, you will be returned back to the previous screen.
 Choose **"Configure more options"** before you create the application.  
 
