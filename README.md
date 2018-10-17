@@ -99,13 +99,13 @@ It may take a few minutes for the jar to be uploaded. But once it is uploaded, y
 Choose **"Configure more options"** before you create the application.  
 
 <details>
- <summary>Elastic Beanstalk Creation Screenshot Here</summary>
+ <summary>Elastic Beanstalk Creation - Click to see Screenshot</summary>
   <img src=/images/EBSetup1.PNG></img>
 </details>
 
 From the Configuration screen,  under the **Network** box click **modify**.  Then add a **VPC** and select to add a **public IP address**.  You will have to select a region as well.
 <details>
- <summary>Elastic VPC Setup Screenshot</summary>
+ <summary>Elastic VPC Setup - Click to see Screenshot</summary>
   <img src=/images/EBSetup2Network.PNG></img>
 </details>
 
@@ -125,7 +125,7 @@ Set the Type to **Custom TCP Rule**, Set the **Port Range** to **8080** and the 
 Then click **Save**.  
 
 <details>
- <summary>Custom TCP Rule Screenshot Here</summary>
+ <summary>Custom TCP Rule - Click to see Screenshot</summary>
   <img src=/images/CustomTCPRuleV2.PNG></img>
 </details>
 
@@ -151,7 +151,7 @@ Commit your code to your newly created GitHub.com repo.
 Before we can create our CodePipeline, we need to create a place to cache our maven and build artifacts.  To do this we will create an S3 bucket.  So, under **Services**, go to **Storage**, then select **S3**, select **Create bucket**.  Give it a name, something like yourinitials-build-cache.
 
 <details>
- <summary>S3 Bucket Creation Screenshot Here</summary>
+ <summary>S3 Bucket Creation - Click to see Screenshot</summary>
   <img src=/images/S3Bucket1.PNG></img>
 </details>
 
@@ -164,7 +164,7 @@ Under **Source Provider** choose Github.  Click the **Connect to GitHub** button
 Once you login and **Authorize aws-codesuite**, choose the newly created Github repo with your code in it under **Repository** NOTE: The Repository and Branch input's look like text boxes, but they are actually drop downs that should list your repos and branches when you click in them.  Set the **Branch** to master.
 
 <details>
- <summary>Source Location Screenshot</summary>
+ <summary>Source Location - Click to see Screenshot</summary>
   <img src=/images/CodePipelineSourceSetup.PNG></img>
 </details>
 
@@ -178,7 +178,7 @@ Under **Build provider** select **AWS CodeBuild**, then select **Create a new bu
 Under the AWS CodeBuild section, give a project name (e.g. BT_PizzaAPI_CodeBuild). Under **Operating System** choose **Ubuntu**.  **Runtime**:**Java**, and **Version**:**openjdk-8**. 
 
 <details>
- <summary>CodeBuild Setup Part 1 Screenshot</summary>
+ <summary>CodeBuild Setup Part 1 - Click to see Screenshot</summary>
   <img src=/images/CodePipelineBuildSetup1.PNG></img>
 </details>
 
@@ -187,7 +187,7 @@ Under the AWS CodeBuild section, give a project name (e.g. BT_PizzaAPI_CodeBuild
 Under **Cache**, in the **Type** drop down, we will have to leave this as **No cache** for now and then change it in a minute(Seems to be a bug in AWS that you cannot select your S3 bucket at this time. 
 Leave the **Create a service role in your account** selected and the default Role name should be fine.  Leave the other defaults and  click the **Save build project** button at the bottom.
 <details>
- <summary>CodeBuild Setup Part 2 Screenshot</summary>
+ <summary>CodeBuild Setup Part 2 - Click to see Screenshot</summary>
   <img src=/images/CodePipelineBuildSetup2.PNG></img>
 </details>
 
@@ -195,14 +195,14 @@ Leave the **Create a service role in your account** selected and the default Rol
 This should create the build project and take you back to the Create pipeline wizard(NOTE:It may take a few seconds).  Before we continue with the pipeline setup, let's set up our Code Build cache.  
 
 <details>
- <summary>CodeBuild Setup Part 1 Screenshot</summary>
+ <summary>CodeBuild Setup Part 1 - Click to see Screenshot</summary>
   <img src=/images/CodePipelineBuildSetup3.PNG></img>
 </details>
 
 Click on the **View project details** under the CodeBuild project name.  This should launch a new tab with your CodeBuild information.  Click the **Edit project** button and then under **Cache** change the **Type** to **Amazon S3**.  Select your bucket from the the **Bucket** drop down.  You can leave the **Path prefix** blank or choose to set it to **cache/archives** (an AWS [tutorial](https://aws.amazon.com/blogs/devops/how-to-enable-caching-for-aws-codebuild/) recommends this, but it works without).
 
 <details>
- <summary>CodeBuild Cache Setup Screenshot</summary>
+ <summary>CodeBuild Cache Setup - Click to see Screenshot</summary>
   <img src=/images/CodeBuildCache.PNG></img>
 </details>
 
@@ -215,7 +215,7 @@ Now you should be back on the **Create pipeline** wizard that is still on **Sele
 Under **Deployment Provider** select **AWS Elastic Beanstalk** and under **Application name** if you click there, it should have your EB application listed.  Select it and then select your EB environment under **Environment name**.  Now click **Next step**.
 
 <details>
- <summary>CodePipeline DeployScreenshot</summary>
+ <summary>CodePipeline Deploy - Click to see Screenshot</summary>
   <img src=/images/CodePipelineDeploy.PNG></img>
 </details>
 
