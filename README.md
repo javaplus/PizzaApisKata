@@ -144,6 +144,7 @@ Before we do anything else with our application code, we are going to create a c
 In order for us to start our Code Pipeline, we first need to have the code somewhere that Amazon can access it.
 Create a Git repo on GitHub.com for your code.  (This has to be on GitHub or some other internet facing Git repository in order for AWS to be able to get access to our code).  
 
+[Basic Instructions for committing your app to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 If you don't have a lot of experience using Git or GitHub, feel free to reach out to me and I can walk you through these steps.
 You will need to have the Git tools installed.  [Git Install Page](https://git-scm.com/downloads)
 
